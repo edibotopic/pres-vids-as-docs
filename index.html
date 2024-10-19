@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>shane@slides</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/ubuntu-light.css" />
+    <link rel="stylesheet" href="custom/main.css" />
+
+    <script src="dist/reveal.js"></script>
+    <script src="anime/lib/anime.min.js"></script>
+    <script src="scripts/drawSVG.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/js/jquery.terminal.min.js"></script>
+
+    <!-- Font awesome is required for the chalkboard plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom controls plugin is used to for opening and closing annotation modes. -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css"
+    />
+    <!-- Chalkboard plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/css/jquery.terminal.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Never Use Video?</h2>
+          <h4>or... Video as Docs (as Code)?</h4>
+
+          <p>Shane Crowley</p>
+          <br />
+          <a href="https://github.com/edibotopic/pres-term-cmd-docs"
+            ><small style="font-size: 24px"
+              ><strong>Note:</strong> this is not about general video
+              production...</small
+            ></a
+          >
+        </section>
+
+        <section data-background-video="./vid/CODA_clip.mp4"></section>
+
+        <section>
+          <!-- Term image data  -->
+          <h3>Opening Thoughts</h3>
+
+          <ul>
+            <li>Why should we avoid video?</li>
+            <li class="fragment fade-up">What are the specific problems?</li>
+            <li class="fragment fade-up">
+              If we could solve those, would we use video?
+            </li>
+            <li class="fragment fade-up">
+              Which things are videos good at documenting?
+            </li>
+            <li class="fragment fade-up">
+              Are we documenting them well without video?
+            </li>
+            <li class="fragment fade-up">
+              Can/should Technical Authors help with video?
+            </li>
+          </ul>
+
+          <br />
+          <br />
+          <small>Some examples where we do use video...</small>
+        </section>
+
+        <section
+          data-background-iframe="https://web.archive.org/web/20240223201129/https://canonical-adsys.readthedocs-hosted.com/en/latest/tutorial/certificates-autoenrollment/"
+        ></section>
+
+        <section
+          data-background-iframe="https://documentation.ubuntu.com/lxd/en/latest/getting_started/"
+        ></section>
+
+        <section data-background-color="#000000">
+          <img src="img/snapcraftVideo.png" alt="" />
+        </section>
+
+        <section
+          data-background-iframe="https://docs.ubuntu.com/styleguide/en/#video"
+        ></section>
+
+        <section>
+          <h4>Documenting a graphical user interface</h4>
+          <div style="margin: auto">
+            <div style="float: left">
+              <iframe
+                width="500px"
+                height="500px"
+                src="https://edibotopic.github.io/write-height/"
+              ></iframe>
+            </div>
+            <div style="float: right; width: 420px">
+              <ul class="fragment fade-up">
+                <br />
+                <li>Upload an image</li>
+                <li>Pan with RMB</li>
+                <li>Rotate with LMD</li>
+                <li>Zoom with pinch</li>
+                <li>Adjust with picker and checkboxes</li>
+                <li>Choose format to download</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Complex GUIs</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TLrA6eJOfqk?si=bhjuYyBWkV3xH-jo&amp;start=459&autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <br /><br />
+          <small class="fragment fade-up"
+            >The Blender GUI has to be <strong>learned</strong>...</small
+          >
+        </section>
+
+        <section>
+          <h2>Multiple contexts</h2>
+          <pre
+            class="bash"
+          ><code data-trim data-noescape data-line-numbers="1|3|5|7|9|11-15">
+PS C:\Users\shane> ubuntu.exe
+
+shane@ubuntu-wsl:~$
+
+shane@ubuntu-wsl:~$ ssh shane@ubuntu-server
+
+shane@ubuntu-server:~$ multipass shell ubuntu-vm
+
+shane@ubuntu-vm:~$ exit
+
+shane@ubuntu-server:~$ exit
+
+shane@ubuntu-wsl:~$ exit
+
+PS C:\Users\shane>
+  </code></pre>
+
+          <br /><br />
+
+          <small class="fragment fade-up"
+            >Videos might be good for: multiple contexts, concurrent events...
+          </small>
+        </section>
+
+        <section data-background-video="./vid/taskAppPanes.mp4"></section>
+
+        <section>
+          <h3>Video as code: Asciinema</h3>
+
+          <script
+            src="https://asciinema.org/a/9b5taKmO7yCrL7WhafQZHAAWu.js"
+            id="asciicast-9b5taKmO7yCrL7WhafQZHAAWu"
+            async="true"
+            data-rows="10"
+          ></script>
+
+          <small class="fragment fade-up"
+            >Solves specific problems with video...</small
+          >
+          <br />
+          <small class="fragment fade-up"
+            >Can be copied, can be source-controlled...</small
+          >
+          <br />
+        </section>
+
+        <section data-background-video="./vid/gitFlowTest1.mp4">
+          <div class="fragment fade-in">
+            <pre
+              style="
+                float: left;
+                box-shadow: none;
+                color: violet;
+                background-color: rgba(0, 0, 0, 0.8);
+              "
+            >
+[2.313985, "o", "\u001b[?2004h\u001b[1;38;5;140m~\u001b[1;38;5;620m\u001b[1;38;5;180m ❯ \u001b[00m"]
+[2.620703, "o", "c"]
+[2.794014, "o", "d"]
+[2.879457, "o", " "]
+[3.112576, "o", "t"]
+[3.199156, "o", "e"]
+[3.344174, "o", "s"]
+[3.438923, "o", "t"]
+[3.762072, "o", "\r\n\u001b[?2004l\r"]
+[3.778942, "o", "\u001b[?2004h\u001b[1;38;5;140m~/test\u001b[1;38;5;620m\u001b[1;38;5;180m ❯ \u001b[00m"]
+[4.716887, "o", "e"]
+[4.879944, "o", "c"]
+[4.967376, "o", "h"]
+[5.147111, "o", "o"]
+[5.351878, "o", " "]
+[5.939624, "o", "\""]
+[6.87844, "o", "p"]
+[6.988062, "o", "r"]
+[7.202012, "o", "i"]
+[7.24857, "o", "n"]
+[7.309504, "o", "t"]
+[8.288656, "o", "("]
+[9.015461, "o", "'"]
+[9.367201, "o", "h"]
+[9.497635, "o", "e"]
+[9.828605, "o", "l"]
+[9.961116, "o", "l"]
+[10.119946, "o", "o"]
+[10.513969, "o", " "]
+[10.61583, "o", "w"]
+[10.720114, "o", "o"]
+[10.811695, "o", "r"]
+[10.891264, "o", "l"]
+[10.985645, "o", "d"]
+[11.932508, "o", "'"]
+[12.631572, "o", ")"]
+[14.300431, "o", "\""]
+[14.685552, "o", " "]
+          </pre
+            >
+          </div>
+        </section>
+
+        <section>
+          <h3>Video as code: VHS</h3>
+
+          <div style="width: 400px; float: left">
+            <pre
+              class="bash"
+              data-cc-copy="Copy"
+              data-cc-copied="Copied!!!"
+            ><code data-trim data-noescape>
+						# test.tape
+						Type "mkdir test"
+						Sleep 500ms
+						Enter
+						Type "cd test"
+						Enter
+						Sleep 1s
+						Type `echo 'print("hello world")' > test.py`
+						Sleep 1s
+						Enter
+						Sleep 2s
+						Type "python3 test.py"
+						Sleep 500ms
+						Enter
+						Sleep 2.5s
+					  </code></pre>
+          </div>
+
+          <img
+            width="550px"
+            src="./img/vhs.gif"
+            alt="Command prompt showing..."
+          />
+
+          <br />
+          <br />
+          <small class="fragment fade-up"
+            >Source is readable and editable</small
+          >
+          <br />
+          <small class="fragment fade-up"
+            >Video generation can be automated...</small
+          >
+        </section>
+
+        <section>
+          <video width="620" height="540" autoplay loop>
+            <source src="vid/vhs-action.webm" type="video/webm" />
+          </video>
+        </section>
+
+        <section>
+          <h3>Video as code: Motion Canvas</h3>
+          <ul>
+            <li>Programmable motion graphics in JS/TS</li>
+            <li>Aimed at development use cases</li>
+            <li>Includes built-in previewer/editor</li>
+          </ul>
+          <pre><code data-trim data-noescape>
+...
+...
+	yield* all(
+		codeLeft().code.append(`dlv debug main.go`),
+		codeRight().code.append(`package main`),
+		codeRight().code.append('\n', 1.6),
+		codeRight().code.append('\nfunc calculateAverage(numbers []int) float64 {', 1.6),
+	);
+...
+...
+  </code></pre>
+        </section>
+
+        <section>
+          <video width="100%" height="100%" autoplay controls>
+            <source src="vid/motionDebug.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section>
+          <h3>Video as code: Manim</h3>
+          <ul>
+            <li>Python library</li>
+            <li>Written and popularised by 3Blue1Brown</li>
+            <li>Targeted at mathematical exposition</li>
+          </ul>
+
+          <pre><code data-trim data-noescape>
+class CodeFromString(Scene):
+    def construct(self):
+        code = '''
+$ multipass find
+$ multipass launch noble
+Launched: coherent-trumpetfish
+$
+'''
+</code></pre>
+        </section>
+
+        <section>
+          <video width="100%" height="100%" autoplay controls>
+            <source src="vid/manimVM.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section>
+          <h3>Scripting videos</h3>
+          <img src="./img/onboarding.png" alt="" />
+          <br /><br />
+          <small>Why did my Git video become three videos...</small>
+        </section>
+
+        <section>
+          <h3>Types of video</h3>
+
+          <ul>
+            <li>Does Diataxis apply to video?</li>
+            <li>Is video good at specific Diataxis types?</li>
+            <li>Are video demos something entirely different?</li>
+            <li>Can/should we TAs help with <i>authoring</i> videos?</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/copycode/copycode.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Deactivate the scroll view on mobile
+        scrollProgress: "false",
+        scrollActivationWidth: null,
+        customcontrols: {
+          controls: [
+            {
+              icon: '<i class="fa fa-pen-square"></i>',
+              title: "Toggle chalkboard (B)",
+              action: "RevealChalkboard.toggleChalkboard();",
+            },
+            {
+              icon: '<i class="fa fa-pen"></i>',
+              title: "Toggle notes canvas (C)",
+              action: "RevealChalkboard.toggleNotesCanvas();",
+            },
+          ],
+        },
+        chalkboard: {
+          // add configuration here
+          boardmarkerWidth: 6,
+          chalkWidth: 9,
+          chalkEffect: 0.0,
+          storage: null,
+          src: null,
+          readOnly: undefined,
+          transition: 800,
+          theme: "whiteboard",
+          grid: { color: "rgb(50,50,10,0.1)", distance: 40, width: 1 },
+        },
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealZoom,
+          CopyCode,
+          RevealChalkboard,
+          RevealCustomControls,
+        ],
+      });
+    </script>
+  </body>
+</html>

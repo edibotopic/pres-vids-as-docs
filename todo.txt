@@ -1,0 +1,3 @@
+- fix theme
+- finish source videos for manim and motion canvas
+- make a repo
