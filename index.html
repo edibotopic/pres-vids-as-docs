@@ -57,29 +57,41 @@
       <div class="slides">
         <section>
           <h2>Never Use Video?</h2>
-          <h4>or... Video as Docs (as Code)?</h4>
+          <h4>Challenges with video-as-docs</h4>
 
           <p>Shane Crowley</p>
           <br />
           <a href="https://github.com/edibotopic/pres-term-cmd-docs"
-            ><small style="font-size: 24px"
+            ><small class="fragment fade-up" style="font-size: 24px"
               ><strong>Note:</strong> this is not about general video
-              production...</small
+              production</small
             ></a
           >
         </section>
 
-        <section data-background-video="./vid/CODA_clip.mp4"></section>
+        <section data-background-color="#E95420">
+          <h3>In video form</h3>
+          <video width="100%" height="100%" data-autoplay>
+            <source src="vid/motionDebug.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section data-background-color="#E95420">
+          <h3>In text form</h3>
+          <img width="70%" data-src="./img/stepStepStep.png" alt="" />
+        </section>
 
         <section>
           <!-- Term image data  -->
           <h3>Opening Thoughts</h3>
 
           <ul>
-            <li>Why should we avoid video?</li>
-            <li class="fragment fade-up">What are the specific problems?</li>
+            <li>Why exactly should we avoid video?</li>
             <li class="fragment fade-up">
-              If we could solve those, would we use video?
+              What specific problems does video have?
+            </li>
+            <li class="fragment fade-up">
+              If they were solved, would we then use video?
             </li>
             <li class="fragment fade-up">
               Which things are videos good at documenting?
@@ -94,36 +106,41 @@
 
           <br />
           <br />
-          <small>Some examples where we do use video...</small>
+          <small class="fragment fade-in"
+            >Some examples where we have used video...</small
+          >
         </section>
 
-        <section
-          data-background-iframe="https://web.archive.org/web/20240223201129/https://canonical-adsys.readthedocs-hosted.com/en/latest/tutorial/certificates-autoenrollment/"
-        ></section>
+        <section>
+          <img data-src="./img/adsysVideo.png" alt="" />
+        </section>
 
         <section
           data-background-iframe="https://documentation.ubuntu.com/lxd/en/latest/getting_started/"
         ></section>
 
-        <section data-background-color="#000000">
-          <img src="img/snapcraftVideo.png" alt="" />
+        <section data-background-color="#E95420">
+          <img data-src="img/snapcraftVideo.png" alt="" />
         </section>
 
-        <section
-          data-background-iframe="https://docs.ubuntu.com/styleguide/en/#video"
-        ></section>
+        <section data-background-color="#E95420">
+          <div class="r-stack">
+            <img data-src="img/styleGuideV1.png" alt="" />
+            <img class="fragment" data-src="/img/styleGuideVideo.png" alt="" />
+          </div>
+        </section>
 
-        <section>
-          <h4>Documenting a graphical user interface</h4>
+        <section data-background-color="#5E2750">
+          <h4 style="color: #e95420">Documenting a graphical user interface</h4>
           <div style="margin: auto">
             <div style="float: left">
               <iframe
                 width="500px"
                 height="500px"
-                src="https://edibotopic.github.io/write-height/"
+                data-src="https://edibotopic.github.io/write-height/"
               ></iframe>
             </div>
-            <div style="float: right; width: 420px">
+            <div style="float: right; width: 420px; color: #ffffff">
               <ul class="fragment fade-up">
                 <br />
                 <li>Upload an image</li>
@@ -137,12 +154,12 @@
           </div>
         </section>
 
-        <section>
-          <h3>Complex GUIs</h3>
+        <section data-background-color="#5E2750">
+          <h3 style="color: #e95420">Complex GUIs</h3>
           <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TLrA6eJOfqk?si=bhjuYyBWkV3xH-jo&amp;start=459&autoplay=1&mute=1"
+            width="760"
+            height="515"
+            data-src="https://www.youtube.com/embed/TLrA6eJOfqk?si=bhjuYyBWkV3xH-jo&amp;start=459&autoplay=1&mute=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -150,13 +167,14 @@
             allowfullscreen
           ></iframe>
           <br /><br />
-          <small class="fragment fade-up"
+          <small style="color: #e95420" class="fragment fade-up"
             >The Blender GUI has to be <strong>learned</strong>...</small
           >
         </section>
 
-        <section>
-          <h2>Multiple contexts</h2>
+        <section data-background-color="#ED764D">
+          <h2 style="color: #ffffff">Switching contexts</h2>
+          <br />
           <pre
             class="bash"
           ><code data-trim data-noescape data-line-numbers="1|3|5|7|9|11-15">
@@ -186,8 +204,16 @@ PS C:\Users\shane>
 
         <section data-background-video="./vid/taskAppPanes.mp4"></section>
 
-        <section>
-          <h3>Video as code: Asciinema</h3>
+        <section data-background-color="#000000">
+          <h3>Performance comparison</h3>
+          <video width="100%" height="100%" data-autoplay loop>
+            <source src="vid/vimCodeSpeed.webm" type="video/webm" />
+          </video>
+          <small>"Vim starts 5-6 times faster than VSCode"</small>
+        </section>
+
+        <section data-background-color="#772953">
+          <h3 style="color: #e95420">Video as code: Asciinema</h3>
 
           <script
             src="https://asciinema.org/a/9b5taKmO7yCrL7WhafQZHAAWu.js"
@@ -196,12 +222,16 @@ PS C:\Users\shane>
             data-rows="10"
           ></script>
 
-          <small class="fragment fade-up"
-            >Solves specific problems with video...</small
+          <label for="pastebox"></label>
+          <textarea
+            placeholder=""
+            class="pastebox"
+            id="pastebox"
+            name="pastebox"
+            rows="4"
+            cols="80"
           >
-          <br />
-          <small class="fragment fade-up"
-            >Can be copied, can be source-controlled...</small
+shane@hague:~$ </textarea
           >
           <br />
         </section>
@@ -288,7 +318,7 @@ PS C:\Users\shane>
 
           <img
             width="550px"
-            src="./img/vhs.gif"
+            data-src="./img/vhs.gif"
             alt="Command prompt showing..."
           />
 
@@ -304,7 +334,7 @@ PS C:\Users\shane>
         </section>
 
         <section>
-          <video width="620" height="540" autoplay loop>
+          <video width="620" height="540" data-autoplay loop>
             <source src="vid/vhs-action.webm" type="video/webm" />
           </video>
         </section>
@@ -330,8 +360,8 @@ PS C:\Users\shane>
   </code></pre>
         </section>
 
-        <section>
-          <video width="100%" height="100%" autoplay controls>
+        <section data-background-color="#E95420">
+          <video width="100%" height="100%" data-autoplay controls>
             <source src="vid/motionDebug.mp4" type="video/mp4" />
           </video>
         </section>
@@ -357,16 +387,35 @@ $
         </section>
 
         <section>
-          <video width="100%" height="100%" autoplay controls>
+          <video width="100%" height="100%" data-autoplay controls>
             <source src="vid/manimVM.mp4" type="video/mp4" />
           </video>
         </section>
 
         <section>
-          <h3>Scripting videos</h3>
-          <img src="./img/onboarding.png" alt="" />
+          <h3>Authoring videos</h3>
+          <img data-src="./img/onboarding.png" alt="" />
           <br /><br />
-          <small>Why did my Git video become three videos...</small>
+
+          <div class="fragment fade-up">
+            <small>With script: <strong>one</strong> video (CODA)</small>
+            <br />
+            <small>Without script: <strong>three</strong> videos (Git)</small>
+          </div>
+        </section>
+
+        <section>
+          <h3>Explanation (CODA)</h3>
+          <video width="100%" height="100%" data-autoplay controls muted>
+            <source src="vid/CODA_clip.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section>
+          <h3>Explanation/tutorial (Git)</h3>
+          <video width="100%" height="100%" data-autoplay controls muted>
+            <source src="/vid/gitVid.webm" type="video/webm" />
+          </video>
         </section>
 
         <section>
@@ -375,8 +424,8 @@ $
           <ul>
             <li>Does Diataxis apply to video?</li>
             <li>Is video good at specific Diataxis types?</li>
-            <li>Are video demos something entirely different?</li>
-            <li>Can/should we TAs help with <i>authoring</i> videos?</li>
+            <li>Are video "demos" a specific type?</li>
+            <li>Should TAs help with <i>authoring</i> videos?</li>
           </ul>
         </section>
       </div>
