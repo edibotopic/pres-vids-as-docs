@@ -15,11 +15,6 @@
     <link rel="stylesheet" href="custom/main.css" />
 
     <script src="dist/reveal.js"></script>
-    <script src="anime/lib/anime.min.js"></script>
-    <script src="scripts/drawSVG.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/js/jquery.terminal.min.js"></script>
 
     <!-- Font awesome is required for the chalkboard plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -60,7 +55,9 @@
 
           <p>Shane Crowley</p>
 
-          <small>Documentation Sprint, The Hague, 2024</small>
+          <small style="color: #aea79f"
+            >Documentation Sprint, The Hague, 2024</small
+          >
         </section>
 
         <section data-background-color="#E95420">
@@ -71,7 +68,7 @@
         </section>
 
         <section data-background-color="#E95420">
-          <p>and how it's currently documented...</p>
+          <p>and the text-based version...</p>
           <img width="60%" data-src="./img/stepStepStep.png" alt="" />
         </section>
 
@@ -119,7 +116,7 @@
         </section>
 
         <section data-background-color="#E95420">
-          <p>Our style guide on video...</p>
+          <p>Style guide</p>
           <div class="r-stack">
             <img data-src="img/styleGuideV1.png" alt="" />
             <img class="fragment" data-src="img/styleGuideVideo.png" alt="" />
@@ -127,7 +124,7 @@
         </section>
 
         <section data-background-color="#5E2750">
-          <h4 style="color: #e95420">self-documenting interface?</h4>
+          <h4 style="color: #e95420">Graphical user interfaces</h4>
           <div style="margin: auto">
             <div style="float: left">
               <iframe
@@ -136,35 +133,38 @@
                 data-src="https://edibotopic.github.io/write-height/"
               ></iframe>
             </div>
-            <div style="float: right; width: 420px; color: #ffffff">
+            <div
+              style="
+                float: right;
+                width: 420px;
+                color: #ffffff;
+                font-size: 22pt;
+              "
+            >
               <ul class="fragment fade-up">
                 <br />
                 <li>Upload an image</li>
                 <li>Pan with RMB</li>
                 <li>Rotate with LMD</li>
                 <li>Zoom with pinch</li>
-                <li>Adjust with picker and checkboxes</li>
-                <li>Choose format to download</li>
+                <li>Adjust colour with picker</li>
+                <li>Toggle render options</li>
+                <li>Choose a download format</li>
+                <li>...</li>
+                <li>...</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section data-background-color="#5E2750">
-          <h3 style="color: #e95420">Interfaces to learn</h3>
-          <iframe
-            width="760"
-            height="515"
-            data-src="https://www.youtube.com/embed/TLrA6eJOfqk?si=bhjuYyBWkV3xH-jo&amp;start=459&autoplay=1&mute=1"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <h4 style="color: #e95420">Graphical user interfaces</h4>
+
+          <img src="/img/blenderGui.png" alt="" />
           <br /><br />
-          <small style="color: #e95420" class="fragment fade-up"
-            >A beginner to Blender can use a <strong>teacher</strong>...</small
+          <small style="color: #ffffff" class="fragment fade-up"
+            >Blender needs to be demonstrated visually by a
+            <strong>teacher</strong>...</small
           >
         </section>
 
@@ -173,7 +173,7 @@
           <br />
           <pre
             class="bash"
-          ><code data-trim data-noescape data-line-numbers="1|3|5|7|9|11-15">
+          ><code data-trim data-noescape data-line-numbers="1|3|5|7|9-15">
 PS C:\Users\shane> ubuntu.exe
 
 shane@ubuntu-wsl:~$
@@ -194,7 +194,7 @@ PS C:\Users\shane>
           <br /><br />
 
           <small class="fragment fade-up"
-            >Videos for the UX of multiple contexts and concurrent events...
+            >In this case, can video help situate a user?
           </small>
         </section>
 
@@ -210,16 +210,12 @@ PS C:\Users\shane>
         </section>
 
         <section data-background-color="#000000">
-          <h3 style="color: #ffffff">Performance comparisons</h3>
+          <h3 style="color: #ffffff">A performance comparison</h3>
           <video width="100%" height="100%" data-autoplay loop>
             <source src="vid/vimCodeSpeed.webm" type="video/webm" />
           </video>
           <small class="fragment fade-left" style="color: #ed764d"
-            >"Vim is a fast, minimal text editor"</small
-          >
-          <br />
-          <small class="fragment fade-right" style="color: #ed764d"
-            >"Vim starts 5-6 times faster than VSCode"</small
+            >Video can make speed or ease more salient</small
           >
         </section>
 
@@ -299,7 +295,7 @@ shane@hague:~$ </textarea
             >
           </div>
           <small class="fragment fade-up" style="color: #ed764d"
-            >not very readable or editable</small
+            >Not very readable or editable</small
           >
         </section>
 
@@ -439,15 +435,9 @@ $
           >
         </section>
 
-        <section>
-          <h3>Types of video</h3>
-
-          <ul>
-            <li>Does Diataxis apply to video?</li>
-            <li>Is video good at specific Diataxis types?</li>
-            <li>Are video "demos" a specific type?</li>
-            <li>What is our role in <i>authoring</i> videos?</li>
-          </ul>
+        <section data-background-color="#000000">
+          <p style="color: #ffffff">Would you watch a...</p>
+          <p style="color: #ffffff"><strong>reference</strong> video???</p>
         </section>
       </div>
     </div>
