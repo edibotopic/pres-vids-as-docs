@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>shane@slides</title>
+    <title>shane@slides</title
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="custom/main.css" />
 
     <script src="dist/reveal.js"></script>
+    <!-- <script src="anime/lib/anime.min.js"></script> -->
+    <!-- <script src="scripts/drawSVG.js"></script> -->
 
     <!-- Font awesome is required for the chalkboard plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -51,80 +53,81 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h3>Never use video in documentation?</h3>
+          <p style="color: #E95420">Video and documentation</p>
 
-          <p>Shane Crowley</p>
+          <small>Shane Crowley | </small>
+          <small>technical author @ Canonical</small>
 
-          <small style="color: #aea79f"
-            >Documentation Sprint, The Hague, 2024</small
+          <br>
+
+          <small style="color: #77216F"
+            >Write the Docs, Ireland, 2024</small
           >
+
+          <br><br>
+          <small>Repo: <a href="https://github.com/edibotopic/pres-vids-as-docs">github.com/edibotopic/pres-vids-as-docs</a></small>
+        </section>
+
+        <section data-background-video="vid/nature-scene.mp4">
+         <blockquote class="fragment fade-in" style="background-color: rgba(200,200,200,0.5);" cite="">
+          Can we just make this plain text?
+         </blockquote> 
         </section>
 
         <section data-background-color="#E95420">
-          <p>An example of documenting with video...</p>
-          <video width="100%" height="100%" data-autoplay>
-            <source src="vid/motionDebug.mp4" type="video/mp4" />
+          <p>This could probably be plain text...</p>
+          <video width="100%" height="100%" data-autoplay no-loop>
+            <source src="vid/imnotavideo.mp4" type="video/mp4" />
           </video>
         </section>
 
-        <section data-background-color="#E95420">
-          <p>and the text-based version...</p>
-          <img width="60%" data-src="./img/stepStepStep.png" alt="" />
+        <section data-background-color="#77216F">
+          <p style="color: #ffffff">This might be more difficult...</p>
+          <video width="100%" height="100%" data-autoplay>
+            <source src="vid/npm-init.mp4" type="video/mp4" />
+          </video>
         </section>
 
-        <section>
-          <!-- Term image data  -->
-          <h3>Opening Thoughts</h3>
+        <section data-background-color="#333333">
 
-          <ul>
-            <li>Why exactly should we avoid video?</li>
-            <li class="fragment fade-up">
-              What specific problems does video have?
-            </li>
-            <li class="fragment fade-up">
-              If they were solved, would we then use video?
-            </li>
-            <li class="fragment fade-up">
-              Which things are videos good at documenting?
-            </li>
-            <li class="fragment fade-up">
-              Are we documenting them well without video?
-            </li>
-            <li class="fragment fade-up">
-              Do Technical Authors have something to offer?
-            </li>
-          </ul>
+            <h2 style="color: #E95420" class="r-fit-text">video</h2>
+            <h2 style="color: #E95420" class="r-fit-text">what is it good for?</h2>
 
-          <br />
-          <br />
-          <small class="fragment fade-in"
-            >Let's look at some examples of where we have used video in
-            docs...</small
-          >
         </section>
 
-        <section>
-          <img data-src="./img/adsysVideo.png" alt="" />
-        </section>
+        <section data-background-color="#AEA79F">
+          <p>Video as tutorial...</p>
 
-        <section
-          data-background-iframe="https://documentation.ubuntu.com/lxd/en/latest/getting_started/"
-        ></section>
-
-        <section data-background-color="#E95420">
-          <img data-src="img/snapcraftVideo.png" alt="" />
-        </section>
-
-        <section data-background-color="#E95420">
-          <p>Style guide</p>
           <div class="r-stack">
-            <img data-src="img/styleGuideV1.png" alt="" />
-            <img class="fragment" data-src="img/styleGuideVideo.png" alt="" />
+          <img data-src="./img/adsysVideo.png" alt="" />
+
+          <iframe class="fragment fade-in" width="600" height="415" src="https://www.youtube-nocookie.com/embed/RwVU7v0sEVY?si=cc2oYHwZ3qj9Pv_M&amp;start=75&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
           </div>
+          <small class="fragment fade-up">... probably could be plain text</small>
+        </section>
+
+        <section data-background-color="#AEA79F">
+          <p>Video as abstract (landing page)...</p>
+          <iframe width="1000px" height="500px" src="https://documentation.ubuntu.com/lxd/en/latest/getting_started/">
+          </iframe>
+          <small class="fragment fade-up">... compact demonstration of function and utility</small>
+        </section>
+
+        <section data-background-color="#AEA79F">
+          <p>Video as abstract (storefront)...</p>
+          <img data-src="img/snapcraftVideo.png" alt="" />
+          <small class="fragment fade-up">... this is what it does, and how quick it does it: do you want it?</small>
+        </section>
+
+        <section data-background-color="#E95420">
+          <p>Our current guidelines...</p>
+            <img data-src="img/styleGuideVideo.png" alt="" />
+          <small class="fragment fade-up">... there is more thinking to be done on this topic</small>
         </section>
 
         <section data-background-color="#5E2750">
-          <h4 style="color: #e95420">Graphical user interfaces</h4>
+          <p style="color: #e95420">GUIs: an obvious case for video?</p>
           <div style="margin: auto">
             <div style="float: left">
               <iframe
@@ -158,18 +161,20 @@
         </section>
 
         <section data-background-color="#5E2750">
-          <h4 style="color: #e95420">Graphical user interfaces</h4>
+          <p style="color: #e95420">Complex interfaces and skill acquisition</p>
 
-          <img src="img/blenderGui.png" alt="" />
-          <br /><br />
-          <small style="color: #ffffff" class="fragment fade-up"
-            >Blender needs to be demonstrated visually by a
-            <strong>teacher</strong>...</small
-          >
+          <div class="r-stack">
+            <img src="img/blenderGui.png" alt="" />
+            <img class="fragment" src="img/blenderGuiImprove.png" alt="" />
+            <blockquote style="background-color: rgba(0,0,0,0.8); color: #ffffff" class="fragment fade-in">
+            As of today, Blender still often needs to be taught by demonstration
+            </blockquote>
+          </div>
+
         </section>
 
-        <section data-background-color="#ED764D">
-          <h2 style="color: #ffffff">Switching contexts</h2>
+        <section data-background-color="#AEA79F">
+          <p>CLIs can be complex too...</p>
           <br />
           <pre
             class="bash"
@@ -194,7 +199,7 @@ PS C:\Users\shane>
           <br /><br />
 
           <small class="fragment fade-up"
-            >In this case, can video help situate a user?
+            >Multiple changes of context or environment
           </small>
         </section>
 
@@ -202,25 +207,28 @@ PS C:\Users\shane>
           <blockquote
             class="fragment fade-in"
             style="background-color: rgba(237, 118, 77, 0.5); color: #ffffff"
-            cite=""
           >
-            contexts: <br />
+            Showing contexts: <br />
             source > UI > file tree > database
           </blockquote>
         </section>
 
         <section data-background-color="#000000">
-          <h3 style="color: #ffffff">A performance comparison</h3>
+          <p style="color: #ffffff">Showing performance</p>
           <video width="100%" height="100%" data-autoplay loop>
             <source src="vid/vimCodeSpeed.webm" type="video/webm" />
           </video>
           <small class="fragment fade-left" style="color: #ed764d"
-            >Video can make speed or ease more salient</small
+            >Video can make <strong>speed</strong>, <strong>ease</strong>, <strong>feel</strong> and <strong>convenience</strong> more salient</small
           >
         </section>
 
+        <section data-background-image="./img/gridWTDtalk.svg">
+          
+        </section>
+
         <section data-background-color="#772953">
-          <h3 style="color: #e95420">Video as code: Asciinema</h3>
+          <p style="color: #e95420">Tooling: Asciinema</p>
 
           <script
             src="https://asciinema.org/a/9b5taKmO7yCrL7WhafQZHAAWu.js"
@@ -238,12 +246,12 @@ PS C:\Users\shane>
             rows="4"
             cols="80"
           >
-shane@hague:~$ </textarea
+shane@wtd:~$ </textarea
           >
-          <br />
         </section>
 
         <section data-background-video="./vid/gitFlowTest1.mp4">
+          <div class="r-stack">
           <div class="fragment fade-in">
             <pre
               style="
@@ -294,13 +302,15 @@ shane@hague:~$ </textarea
           </pre
             >
           </div>
-          <small class="fragment fade-up" style="color: #ed764d"
-            >Not very readable or editable</small
+          <blockquote class="fragment fade-left" style="background-color: rgba(120,20,200,0.8); color: #ed764d"
+            >Not very readable or editable</blockquote
           >
+            
+          </div>
         </section>
 
-        <section>
-          <h3>Video as code: VHS</h3>
+        <section data-background-color="#AEA79F">
+          <p>Tooling: VHS</p>
 
           <div style="width: 400px; float: left">
             <pre
@@ -343,14 +353,83 @@ shane@hague:~$ </textarea
           >
         </section>
 
-        <section>
+        <section data-background-color="#AEA79F">
           <video width="620" height="540" data-autoplay loop>
             <source src="vid/vhs-action.webm" type="video/webm" />
           </video>
         </section>
 
+        <section data-background-color="#AEA79F">
+          <p>Testing an authentication method</p>
+
+          <div style="width: 520px; float: left;">
+            <pre style="overflow: hidden;"
+            ><code style="overflow-x: hidden;" data-trim data-noescape>
+Scan the qrcode or enter the code:
+
+█████████████████████████████████
+█████████████████████████████████
+████ ▄▄▄▄▄ █  ▀▀█▄██ █ ▄▄▄▄▄ ████
+████ █   █ █▀▄██ ▄▄▄██ █   █ ████
+████ █▄▄▄█ ██▄ █ ▄ ▄▄█ █▄▄▄█ ████
+████▄▄▄▄▄▄▄█ ▀▄▀▄▀ ▀▄█▄▄▄▄▄▄▄████
+████▄█ ▄█ ▄ ▀█▄▀▀▄▄█ █▄▀█▄█ ▄████
+█████▀█▀▄ ▄ ▄▀█▀▀▀ ▀█▄▀▄▄▀▀██████
+████▄  █▀█▄▄▄██ █▀█▀█▄   █▄▄ ████
+████▀▄  ▀▄▄█ ▄▄█ ▀▄▀▀ ▀▀ █▄▄▀████
+███████▄▄█▄█  ▀▄▀▀█▀ ▄▄▄ ▄ ▄ ████
+████ ▄▄▄▄▄ █  █▄ ██▀ █▄█ █▄  ████
+████ █   █ █▀▄ ▄  ▀▀▄  ▄  ▀▀▀████
+████ █▄▄▄█ █▄█▄▄▄▄█ █  █ █ ▄█████
+████▄▄▄▄▄▄▄█▄█▄█▄█▄████▄▄▄▄▄▄████
+█████████████████████████████████
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+       https://ubuntu.com
+              1341
+
+        [ Regenerate code ]
+
+────────────────────────────────────────────────────────────────────────────────
+
+PAM Authenticate()
+  User: "user-integration-qr-code"
+  Result: success
+PAM AcctMgmt()
+  User: "user-integration-qr-code"
+  Result: success
+>
+
+</code></pre>
+</div>
+
+            <div
+              style="
+                float: right;
+                width: 440px;
+                color: #000000;
+                font-size: 18pt;
+              "
+            >
+              <ul>
+                <br />
+                <br />
+                <br />
+                <strong>Process:</strong>
+                <br>
+                <br>
+                <li>Generate golden file</li>
+                <li>Simulate user interaction</li>
+                <li>Diff output and golden files</li>
+                <li>Review video to debug</li>
+                <li>Use video/gif in documentation</li>
+              </ul>
+            </div>
+
+
+</section>
+
         <section>
-          <h3>Video as code: Motion Canvas</h3>
+          <p style="color: #e95420">Tooling: Motion Canvas</p>
           <ul>
             <li>Programmable motion graphics in JS/TS</li>
             <li>Aimed at development use cases</li>
@@ -371,13 +450,20 @@ shane@hague:~$ </textarea
         </section>
 
         <section data-background-color="#E95420">
+          <p>Integrating actions, code, outputs, errors</p>
           <video width="100%" height="100%" data-autoplay controls>
             <source src="vid/motionDebug.mp4" type="video/mp4" />
           </video>
+          <small class="fragment fade-up">We have a tendency to linearise this information...</small>
+        </section>
+
+        <section data-background-color="#E95420">
+          <p>Text-based version...</p>
+          <img width="60%" data-src="./img/stepStepStep.png" alt="" />
         </section>
 
         <section>
-          <h3>Video as code: Manim</h3>
+          <p style="color: #e95420">Tooling: Manim</p>
           <ul>
             <li>Python library</li>
             <li>Written and popularised by 3Blue1Brown</li>
@@ -402,42 +488,29 @@ $
           </video>
         </section>
 
-        <section>
-          <h3>Authoring videos</h3>
-          <img data-src="./img/onboarding.png" alt="" />
-          <br /><br />
-
-          <div class="fragment fade-up">
-            <small>With script: <strong>one</strong> video (CODA)</small>
-            <br />
-            <small>Without script: <strong>three</strong> videos (Git)</small>
-          </div>
+        <section data-background-image="./img/diataxis.webp">
+            <blockquote style="background-color: rgba(0,0,0,0.9); color: #AEA79F" class="fragment fade-in">
+            Where does video fit in this framework?
+            </blockquote>
         </section>
 
-        <section>
-          <h3>authoring videos: CODA</h3>
-          <video width="90%" height="90%" data-autoplay controls muted>
-            <source src="vid/CODA_clip.mp4" type="video/mp4" />
-          </video>
-          <br />
-          <small>Snippet from video that functioned as an explanation</small>
-        </section>
-
-        <section>
-          <h3>Authoring videos: Git</h3>
-          <video width="100%" height="100%" data-autoplay controls muted>
-            <source src="vid/gitVid.webm" type="video/webm" />
-          </video>
-          <br />
-          <small
-            >Snippet from video that blurred between explanation and
-            tutorial</small
-          >
-        </section>
-
-        <section data-background-color="#000000">
+        <section data-background-color="#000000" data-auto-animate>
           <p style="color: #ffffff">Would you watch a...</p>
           <p style="color: #ffffff"><strong>reference</strong> video???</p>
+        </section>
+
+        <section data-background-color="#000000" data-auto-animate>
+          <p style="color: #ffffff">Would you watch a...</p>
+          <p style="color: #ffffff"><strong>reference</strong> video???</p>
+          <br>
+          <small>Probably not: video excels at <strong>demonstration</strong> and <strong>integration</strong></small>
+        </section>
+          
+        <section data-background-color="#333333">
+            <h2 style="color: #E95420" class="r-fit-text">thanks!</h2>
+            <h2 style="color: #E95420" class="r-fit-text">shane.crowley@canonical.com</h2>
+        </section>
+
         </section>
       </div>
     </div>
@@ -454,6 +527,8 @@ $
       Reveal.initialize({
         hash: true,
         // Deactivate the scroll view on mobile
+        transition: 'none',
+        backgroundTransition: 'none',
         scrollProgress: "false",
         scrollActivationWidth: null,
         customcontrols: {
