@@ -115,7 +115,7 @@ a minute.
 Increasingly, scientists are encouraged to prepared graphical and even video
 abstracts to accompany their articles.
 
-### Slide 6: video as abstract (landing pages)
+### Slide 7: video as abstract (landing pages)
 
 When I was looking at some of our video documentation, it reminded me of the
 abstract.
@@ -128,7 +128,7 @@ Essentially, it gives a full walkthrough of LXD's key features. I can view
 it in three minutes without doing any work on my computer. If I'm
 interested, I can read the rest of the docs.
 
-### Slide 7: showing performance
+### Slide 8: showing performance
 
 The previous video also goes some way to demonstrating the performance and productivity of the application.
 
@@ -136,7 +136,7 @@ It shows how quickly commands run and how quickly you can get things done.
 
 Here is another illustration of this, comparing the opening speeds of Vim and VSCode.
 
-### Slide 8: video as abstract (storefront)
+### Slide 9: video as abstract (storefront)
 
 Another example here is the store page for installing the Go snap. What I
 like about this is that it demonstrates how quickly you can get a Go
@@ -148,7 +148,7 @@ release versions are still in view.
 
 Videos condense a lot of content into a small amount of visual space.
 
-### Slide 9: GUIs: a more obvious case?
+### Slide 10: GUIs: a more obvious case?
 
 Arguably, a more immediate candidate for video documentation is the
 graphical user interface.
@@ -167,7 +167,7 @@ with a lot of images that don't capture the feel of the software.
 
 And... as 3D software goes, what I built here is one of the simplest cases!
 
-### Slide 10: Complex interfaces and skill acquisition
+### Slide 11: Complex interfaces and skill acquisition
 
 Blender is one of the most loved open-source projects. It can be used for
 creating 3D models, digital sculpting, motion graphics and video editing. It
@@ -204,7 +204,7 @@ future.
 
 At Canonical, we don't really have GUIs of this complexity.
 
-### Slide 11: CLIs can be complex too
+### Slide 12: CLIs can be complex too
 
 I've spoken a lot about GUIs, but CLIs can also have a lot of complexity.
 
@@ -223,7 +223,7 @@ The only indication of these changes for someone reading this documentation
 is the prompts. Depending on the expertise of the user, this could be
 routine or discombobulating.
 
-### Slide 12: video of multi-pane interface (tmux)
+### Slide 13: video of multi-pane interface (tmux)
 
 Developers often work in environments like.
 A mixture of terminals, code and output.
