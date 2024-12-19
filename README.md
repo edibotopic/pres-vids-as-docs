@@ -404,6 +404,18 @@ alone we might end up disappointed.
 
 The real value of video might be in the domain of explanation, for example.
 
+### Slide 27: ThePrimeagen
+
+A lot of people watch videos of him manipulating text on screen.
+
+It's a performance.
+
+A demonstration of excellence.
+
+A dynamic interplay between thought, action and effect.
+
+Text is the focus of his videos, but the videos could not just be plain text.
+
 ## Tools referenced
 
 - [Asciinema](https://asciinema.org/)
@@ -412,3 +424,12 @@ The real value of video might be in the domain of explanation, for example.
 - [Motion Canvas](https://motioncanvas.io/)
 - [Manim](https://www.manim.community/)
 - [kdenlive](https://kdenlive.org/en/)
+- [WriteHeight](https://edibotopic.github.io/write-height/)
+- [Canonical's authd](https://github.com/ubuntu/authd)
+
+## Acknowledgements
+
+Denison and Didier from authd for discussions about VHS for integrated testing.
+
+Daniele Procida and the documentation team at Canonical for feedback on an
+early version of the talk.
