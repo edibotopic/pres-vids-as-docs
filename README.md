@@ -2,6 +2,8 @@
 
 Slides for a session on video and documentation.
 
+You can view the slides [here](https://edibotopic.github.io/pres-vids-as-docs/). Fittingly, they contain a lot of video. The videos autoplay so that I wouldn't linger too long on a slide during the talk.
+
 Originally presented at Canonical sprint in The Hague, Oct 2024. Later
 presented at Write the Docs, Ireland.
 
