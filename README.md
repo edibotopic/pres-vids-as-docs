@@ -2,15 +2,12 @@
 
 Slides for a session on video and documentation.
 
-You can view the slides [here](https://edibotopic.github.io/pres-vids-as-docs/). Fittingly, they contain a lot of video. The videos autoplay so that I wouldn't linger too long on a slide during the talk.
-
 Originally presented at Canonical sprint in The Hague, Oct 2024. Later
 presented at Write the Docs, Ireland.
 
-The slides are made with reveal.js using a rudimentary, custom Ubuntu theme.
+The slides are made with reveal.js using a rudimentary, custom Ubuntu theme, which I need to improve.
 
-The presentation makes heavy use of embedded video that I have not had the
-opportunity to compress yet!!!
+You can view the slides [here](https://edibotopic.github.io/pres-vids-as-docs/). Fittingly, they contain a lot of video. The videos autoplay so that I wouldn't linger too long on a slide during the talk
 
 ## Outline
 
@@ -34,6 +31,8 @@ Even if we choose not to use video, thinking about what video does well may
 help us write better documentation.
 
 ## Rough notes
+
+These are the notes I quickly typed out before the talk. It's not a script.
 
 ### Slide 1: introduction
 
